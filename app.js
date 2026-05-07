@@ -16,13 +16,78 @@ const players = [
     hr: 2
   },
   {
-    name: "Null",
-    ab: 0,
+    name: "Lucas F",
+    ab: 2,
+    h: 1,
+    doubles: 0,
+    triples: 0,
+    hr: 0
+  },
+   {
+    name: "Jeff L",
+    ab: 1,
     h: 0,
     doubles: 0,
     triples: 0,
     hr: 0
+  },
+   {
+    name: "Jordan P",
+    ab: 2,
+    h: 2,
+    doubles: 0,
+    triples: 0,
+    hr: 0
+  },
+   {
+    name: "Ross L",
+    ab: 2,
+    h: 1,
+    doubles: 0,
+    triples: 0,
+    hr: 0
+  },
+   {
+    name: "Dave B",
+    ab: 2,
+    h: 0,
+    doubles: 0,
+    triples: 0,
+    hr: 0
+  },
+   {
+    name: "Ben P",
+    ab: 1,
+    h: 1,
+    doubles: 0,
+    triples: 1,
+    hr: 0
+  },
+   {
+    name: "Jon S",
+    ab: 1,
+    h: 0,
+    doubles: 0,
+    triples: 0,
+    hr: 0
+  },
+   {
+    name: "Franklin S",
+    ab: 1,
+    h: 0,
+    doubles: 0,
+    triples: 0,
+    hr: 0
+  },
+   {
+    name: "Nick C",
+    ab: 1,
+    h: 1,
+    doubles: 0,
+    triples: 0,
+    hr: 0
   }
+  
 ];
 
 

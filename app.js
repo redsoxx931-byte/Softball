@@ -160,7 +160,7 @@ const players = [
     hr: 0
   },
    {
-    name: "Jay Bobby",
+    name: "Jay Bobby Boy",
     ab: 6,
     h: 4,
     doubles: 1,

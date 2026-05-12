@@ -13,7 +13,7 @@ const players = [
     h: 21,
     doubles: 2,
     triples: 2,
-    hr: 2
+    hr: 5
   },
   {
     name: "Lucas F",

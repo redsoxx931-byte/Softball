@@ -104,7 +104,7 @@ const players = [
     hr: 0
   },
    {
-    name: "Cole Inderlee",
+    name: "Cole Inderle",
     ab: 7,
     h: 4,
     doubles: 2,

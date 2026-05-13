@@ -194,7 +194,7 @@ const players = [
     {
     name: "Noah",
     ab: 8,
-    h: 3,
+    h: 5,
     doubles: 1,
     triples: 0,
     hr: 0

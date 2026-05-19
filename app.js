@@ -9,11 +9,11 @@ const players = [
   },
   {
     name: "Austin Smith",
-    ab: 34,
-    h: 27,
+    ab: 38,
+    h: 30,
     doubles: 3,
     triples: 2,
-    hr: 7
+    hr: 9
   },
   {
     name: "Lucas F",
@@ -25,17 +25,17 @@ const players = [
   },
    {
     name: "Jeff L",
-    ab: 11,
-    h: 2,
-    doubles: 0,
-    triples: 0,
+    ab: 14,
+    h: 5,
+    doubles: 1,
+    triples: 1,
     hr: 0
   },
    {
     name: "Jordan P",
-    ab: 12,
-    h: 10,
-    doubles: 0,
+    ab: 17,
+    h: 13,
+    doubles: 1,
     triples: 0,
     hr: 0
   },
@@ -49,25 +49,25 @@ const players = [
   },
    {
     name: "Dave B",
-    ab: 10,
-    h: 6,
+    ab: 15,
+    h: 7,
     doubles: 2,
     triples: 0,
     hr: 0
   },
    {
     name: "Ben P",
-    ab: 9,
-    h: 6,
+    ab: 13,
+    h: 9,
     doubles: 1,
     triples: 2,
     hr: 0
   },
    {
     name: "Jon S",
-    ab: 9,
-    h: 4,
-    doubles: 0,
+    ab: 13,
+    h: 8,
+    doubles: 1,
     triples: 0,
     hr: 0
   },
@@ -113,11 +113,11 @@ const players = [
   },
    {
     name: "Lucas Dorton",
-    ab: 25,
-    h: 14,
-    doubles: 4,
+    ab: 30,
+    h: 17,
+    doubles: 5,
     triples: 0,
-    hr: 0
+    hr: 1
   },
    {
     name: "Austin Schmidt",
@@ -213,6 +213,14 @@ const players = [
     h: 4,
     doubles: 0,
     triples: 1,
+    hr: 0
+  },
+  {
+    name: "Jeff H",
+    ab: 4,
+    h: 1,
+    doubles: 1,
+    triples: 0,
     hr: 0
   },
   

@@ -1,17 +1,17 @@
 const players = [
   {
     name: "Kevin Sandborg",
-    ab: 10,
-    h: 6,
-    doubles: 2,
+    ab: 15,
+    h: 11,
+    doubles: 1,
     triples: 0,
-    hr: 2
+    hr: 4
   },
   {
     name: "Austin Smith",
-    ab: 38,
-    h: 30,
-    doubles: 3,
+    ab: 43,
+    h: 33,
+    doubles: 4,
     triples: 2,
     hr: 9
   },
@@ -113,8 +113,8 @@ const players = [
   },
    {
     name: "Lucas Dorton",
-    ab: 30,
-    h: 17,
+    ab: 35,
+    h: 19,
     doubles: 5,
     triples: 0,
     hr: 1
@@ -169,8 +169,8 @@ const players = [
   },
     {
     name: "Ana",
-    ab: 10,
-    h: 5,
+    ab: 15,
+    h: 10,
     doubles: 2,
     triples: 0,
     hr: 0
@@ -185,8 +185,8 @@ const players = [
   },
     {
     name: "Olivia",
-    ab: 9,
-    h: 5,
+    ab: 14,
+    h: 8,
     doubles: 1,
     triples: 0,
     hr: 0
@@ -201,8 +201,8 @@ const players = [
   },
     {
     name: "Autumn",
-    ab: 8,
-    h: 3,
+    ab: 13,
+    h: 4,
     doubles: 0,
     triples: 0,
     hr: 0
@@ -220,6 +220,14 @@ const players = [
     ab: 4,
     h: 1,
     doubles: 1,
+    triples: 0,
+    hr: 0
+  },
+   {
+    name: "Sabrina",
+    ab: 11,
+    h: 6,
+    doubles: 0,
     triples: 0,
     hr: 0
   },

@@ -9,11 +9,11 @@ const players = [
   },
   {
     name: "Austin Smith",
-    ab: 43,
-    h: 33,
-    doubles: 4,
+    ab: 49,
+    h: 37,
+    doubles: 6,
     triples: 2,
-    hr: 9
+    hr: 10
   },
   {
     name: "Lucas F",

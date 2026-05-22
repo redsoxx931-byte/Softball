@@ -123,8 +123,8 @@ const players = [
   },
    {
     name: "Tim",
-    ab: 10,
-    h: 1,
+    ab: 11,
+    h: 5,
     doubles: 0,
     triples: 0,
     hr: 0
@@ -132,7 +132,7 @@ const players = [
    {
     name: "Jordan",
     ab: 10,
-    h: 3,
+    h: 4,
     doubles: 2,
     triples: 0,
     hr: 0

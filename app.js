@@ -1,65 +1,65 @@
 const players = [
   {
     name: "Kevin Sandborg",
-    ab: 20,
-    h: 14,
+    ab: 23,
+    h: 16,
     doubles: 2,
     triples: 0,
     hr: 4
   },
   {
     name: "Austin Smith",
-    ab: 69,
-    h: 52,
-    doubles: 8,
+    ab: 83,
+    h: 60,
+    doubles: 12,
     triples: 2,
-    hr: 14
+    hr: 17
   },
   {
     name: "Lucas F",
-    ab: 10,
-    h: 10,
+    ab: 14,
+    h: 13,
     doubles: 2,
     triples: 0,
-    hr: 4
+    hr: 5
   },
    {
     name: "Jeff L",
-    ab: 14,
-    h: 5,
+    ab: 18,
+    h: 8,
     doubles: 1,
-    triples: 1,
+    triples: 2,
     hr: 0
   },
    {
     name: "Jordan P",
-    ab: 21,
-    h: 15,
-    doubles: 2,
+    ab: 25,
+    h: 16,
+    doubles: 3,
     triples: 0,
     hr: 0
   },
 
    {
     name: "Dave B",
-    ab: 15,
-    h: 7,
+    ab: 19,
+    h: 8,
     doubles: 2,
     triples: 0,
     hr: 0
   },
    {
     name: "Ben P",
-    ab: 13,
-    h: 9,
-    doubles: 1,
+    ab: 17,
+    h: 13,
+    doubles: 3,
     triples: 2,
     hr: 0
   },
    {
     name: "Jon S",
-    ab: 13,
-    h: 8,
+    ab: 17,
+    h: 10,
     doubles: 1,
     triples: 0,
     hr: 0
@@ -91,8 +91,8 @@ const players = [
   },
    {
     name: "Lucas Dorton",
-    ab: 43,
-    h: 22,
+    ab: 50,
+    h: 29,
     doubles: 5,
     triples: 0,
     hr: 1
@@ -147,15 +147,15 @@ const players = [
   },
     {
     name: "Ana",
-    ab: 20,
-    h: 12,
+    ab: 23,
+    h: 14,
     doubles: 2,
     triples: 0,
     hr: 0
   },
     {
     name: "Angel",
-    ab: 16,
+    ab: 19,
     h: 7,
     doubles: 1,
     triples: 0,
@@ -163,59 +163,59 @@ const players = [
   },
     {
     name: "Olivia",
-    ab: 19,
-    h: 10,
+    ab: 22,
+    h: 13,
     doubles: 1,
     triples: 0,
     hr: 0
   },
     {
     name: "Noah",
-    ab: 13,
-    h: 10,
+    ab: 16,
+    h: 12,
     doubles: 2,
     triples: 0,
     hr: 0
   },
     {
     name: "Autumn",
-    ab: 18,
-    h: 6,
+    ab: 21,
+    h: 7,
     doubles: 0,
     triples: 0,
     hr: 0
   },
     {
     name: "Jonathon",
-    ab: 9,
-    h: 8,
+    ab: 12,
+    h: 10,
     doubles: 0,
     triples: 1,
     hr: 0
   },
   {
     name: "Jeff H",
-    ab: 4,
-    h: 1,
+    ab: 8,
+    h: 3,
     doubles: 1,
     triples: 0,
     hr: 0
   },
    {
     name: "Sabrina",
-    ab: 17,
-    h: 10,
+    ab: 21,
+    h: 13,
     doubles: 0,
     triples: 0,
     hr: 0
   },
   {
     name: "Dom",
-    ab: 12,
-    h: 8,
-    doubles: 0,
-    triples: 0,
-    hr: 2
+    ab: 19,
+    h: 13,
+    doubles: 2,
+    triples: 1,
+    hr: 3
   },
   
 ];

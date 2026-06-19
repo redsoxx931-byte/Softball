@@ -124,7 +124,7 @@ const players = [
    {
     name: "Tim",
     ab: 18,
-    h: 3,
+    h: 9,
     doubles: 0,
     triples: 0,
     hr: 0

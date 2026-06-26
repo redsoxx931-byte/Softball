@@ -43,7 +43,7 @@ const players = [
    {
     name: "Dave B",
     ab: 22,
-    h: 1,
+    h: 13,
     doubles: 2,
     triples: 0,
     hr: 1

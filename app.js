@@ -1,40 +1,40 @@
 const players = [
   {
     name: "Kevin Sandborg",
-    ab: 23,
-    h: 16,
+    ab: 26,
+    h: 18,
     doubles: 2,
     triples: 0,
     hr: 4
   },
   {
     name: "Austin Smith",
-    ab: 100,
-    h: 74,
-    doubles: 14,
-    triples: 3,
-    hr: 19
+    ab: 153,
+    h: 109,
+    doubles: 25,
+    triples: 5,
+    hr: 24
   },
   {
     name: "Lucas F",
-    ab: 14,
-    h: 13,
+    ab: 24,
+    h: 18,
     doubles: 2,
     triples: 0,
     hr: 5
   },
    {
     name: "Jeff L",
-    ab: 18,
-    h: 8,
+    ab: 30,
+    h: 17,
     doubles: 1,
     triples: 2,
     hr: 0
   },
    {
     name: "Jordan P",
-    ab: 25,
-    h: 16,
+    ab: 37,
+    h: 20,
     doubles: 3,
     triples: 0,
     hr: 0
@@ -42,24 +42,24 @@ const players = [
 
    {
     name: "Dave B",
-    ab: 19,
-    h: 8,
+    ab: 22,
+    h: 1,
     doubles: 2,
     triples: 0,
-    hr: 0
+    hr: 1
   },
    {
     name: "Ben P",
-    ab: 17,
-    h: 13,
-    doubles: 3,
+    ab: 30,
+    h: 17,
+    doubles: 4,
     triples: 2,
     hr: 0
   },
    {
     name: "Jon S",
-    ab: 17,
-    h: 10,
+    ab: 28,
+    h: 14,
     doubles: 1,
     triples: 0,
     hr: 0
@@ -75,25 +75,25 @@ const players = [
   },
    {
     name: "Mitch",
-    ab: 23,
-    h: 17,
+    ab: 39,
+    h: 27,
     doubles: 1,
     triples: 0,
     hr: 0
   },
    {
     name: "Cole Inderle",
-    ab: 24,
-    h: 14,
-    doubles: 5,
+    ab: 42,
+    h: 25,
+    doubles: 8,
     triples: 0,
-    hr: 0
+    hr: 1
   },
    {
     name: "Lucas Dorton",
-    ab: 63,
-    h: 36,
-    doubles: 7,
+    ab: 96,
+    h: 57,
+    doubles: 10,
     triples: 0,
     hr: 1
   },
@@ -107,55 +107,55 @@ const players = [
   },
    {
     name: "Dad Bod",
-    ab: 25,
-    h: 13,
-    doubles: 1,
+    ab: 40,
+    h: 21,
+    doubles: 2,
     triples: 0,
     hr: 1
   },
    {
     name: "Nick Brown",
-    ab: 14,
-    h: 9,
+    ab: 24,
+    h: 16,
     doubles: 0,
     triples: 0,
     hr: 0
   },
    {
     name: "Tim",
-    ab: 18,
-    h: 9,
+    ab: 26,
+    h: 14,
     doubles: 0,
     triples: 0,
     hr: 0
   },
    {
     name: "Jordan",
-    ab: 24,
-    h: 13,
+    ab: 40,
+    h: 23,
     doubles: 2,
     triples: 0,
     hr: 0
   },
    {
     name: "Jay Bob",
-    ab: 27,
-    h: 13,
+    ab: 43,
+    h: 22,
     doubles: 1,
     triples: 0,
     hr: 0
   },
     {
     name: "Ana",
-    ab: 23,
-    h: 14,
+    ab: 26,
+    h: 16,
     doubles: 2,
     triples: 0,
     hr: 0
   },
     {
     name: "Angel",
-    ab: 19,
+    ab: 22,
     h: 7,
     doubles: 1,
     triples: 0,
@@ -163,32 +163,32 @@ const players = [
   },
     {
     name: "Olivia",
-    ab: 22,
-    h: 13,
+    ab: 26,
+    h: 15,
     doubles: 1,
     triples: 0,
     hr: 0
   },
     {
     name: "Noah",
-    ab: 16,
-    h: 12,
+    ab: 19,
+    h: 14,
     doubles: 2,
     triples: 0,
     hr: 0
   },
     {
     name: "Autumn",
-    ab: 21,
-    h: 7,
+    ab: 24,
+    h: 8,
     doubles: 0,
     triples: 0,
     hr: 0
   },
     {
     name: "Jonathon",
-    ab: 12,
-    h: 10,
+    ab: 15,
+    h: 12,
     doubles: 0,
     triples: 1,
     hr: 0
@@ -203,19 +203,19 @@ const players = [
   },
    {
     name: "Sabrina",
-    ab: 21,
-    h: 13,
+    ab: 25,
+    h: 16,
     doubles: 0,
     triples: 0,
     hr: 0
   },
   {
     name: "Dom",
-    ab: 33,
-    h: 22,
-    doubles: 4,
-    triples: 3,
-    hr: 4
+    ab: 51,
+    h: 34,
+    doubles: 7,
+    triples: 5,
+    hr: 5
   },
   
 ];

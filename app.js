@@ -1,56 +1,56 @@
 const players = [
   {
     name: "Kevin Sandborg",
-    ab: 26,
-    h: 18,
-    doubles: 2,
-    triples: 0,
-    hr: 4
-  },
-  {
-    name: "Austin Smith",
-    ab: 155,
-    h: 111,
-    doubles: 26,
-    triples: 5,
-    hr: 24
-  },
-  {
-    name: "Lucas F",
-    ab: 24,
+    ab: 35,
     h: 18,
     doubles: 2,
     triples: 0,
     hr: 5
   },
+  {
+    name: "Austin Smith",
+    ab: 173,
+    h: 125,
+    doubles: 29,
+    triples: 5,
+    hr: 27
+  },
+  {
+    name: "Lucas F",
+    ab: 28,
+    h: 20,
+    doubles: 2,
+    triples: 0,
+    hr: 6
+  },
    {
     name: "Jeff L",
-    ab: 36,
-    h: 21,
+    ab: 41,
+    h: 24,
     doubles: 1,
     triples: 2,
     hr: 0
   },
    {
     name: "Jordan P",
-    ab: 42,
-    h: 23,
+    ab: 46,
+    h: 24,
     doubles: 3,
     triples: 0,
-    hr: 1
+    hr: 2
   },
 
    {
     name: "Dave B",
-    ab: 28,
-    h: 17,
-    doubles: 2,
+    ab: 32,
+    h: 21,
+    doubles: 4,
     triples: 0,
     hr: 1
   },
    {
     name: "Ben P",
-    ab: 36,
+    ab: 40,
     h: 21,
     doubles: 4,
     triples: 2,
@@ -58,8 +58,8 @@ const players = [
   },
    {
     name: "Jon S",
-    ab: 34,
-    h: 18,
+    ab: 38,
+    h: 19,
     doubles: 1,
     triples: 0,
     hr: 0
@@ -147,9 +147,9 @@ const players = [
   },
     {
     name: "Ana",
-    ab: 26,
-    h: 16,
-    doubles: 2,
+    ab: 35,
+    h: 20,
+    doubles: 3,
     triples: 0,
     hr: 0
   },
@@ -163,24 +163,24 @@ const players = [
   },
     {
     name: "Olivia",
-    ab: 26,
-    h: 15,
+    ab: 29,
+    h: 16,
     doubles: 1,
     triples: 0,
     hr: 0
   },
     {
     name: "Noah",
-    ab: 19,
-    h: 14,
+    ab: 26,
+    h: 17,
     doubles: 2,
     triples: 0,
     hr: 0
   },
     {
     name: "Autumn",
-    ab: 24,
-    h: 8,
+    ab: 31,
+    h: 11,
     doubles: 0,
     triples: 0,
     hr: 0
@@ -195,32 +195,32 @@ const players = [
   },
   {
     name: "Jeff H",
-    ab: 14,
-    h: 8,
-    doubles: 2,
+    ab: 18,
+    h: 10,
+    doubles: 3,
     triples: 0,
     hr: 1
   },
    {
     name: "Sabrina",
-    ab: 25,
-    h: 16,
+    ab: 34,
+    h: 19,
     doubles: 0,
     triples: 0,
     hr: 0
   },
   {
     name: "Dom",
-    ab: 57,
-    h: 37,
-    doubles: 7,
+    ab: 66,
+    h: 43,
+    doubles: 8,
     triples: 5,
     hr: 7
   },
    {
     name: "Nick Doetkott",
-    ab: 5,
-    h: 3,
+    ab: 9,
+    h: 6,
     doubles: 1,
     triples: 0,
     hr: 0

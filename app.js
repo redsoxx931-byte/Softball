@@ -9,8 +9,8 @@ const players = [
   },
   {
     name: "Austin Smith",
-    ab: 173,
-    h: 125,
+    ab: 180,
+    h: 132,
     doubles: 29,
     triples: 5,
     hr: 27

@@ -1,19 +1,19 @@
 const players = [
   {
     name: "Kevin Sandborg",
-    ab: 35,
-    h: 18,
-    doubles: 2,
-    triples: 0,
+    ab: 43,
+    h: 24,
+    doubles: 4,
+    triples: 1,
     hr: 5
   },
   {
     name: "Austin Smith",
-    ab: 194,
-    h: 145,
-    doubles: 32,
+    ab: 203,
+    h: 153,
+    doubles: 35,
     triples: 5,
-    hr: 28
+    hr: 30
   },
   {
     name: "Lucas F",
@@ -155,16 +155,16 @@ const players = [
   },
     {
     name: "Angel",
-    ab: 22,
-    h: 7,
+    ab: 30,
+    h: 10,
     doubles: 1,
     triples: 0,
     hr: 0
   },
     {
     name: "Olivia",
-    ab: 29,
-    h: 16,
+    ab: 36,
+    h: 18,
     doubles: 1,
     triples: 0,
     hr: 0
@@ -187,9 +187,9 @@ const players = [
   },
     {
     name: "Jonathon",
-    ab: 15,
-    h: 12,
-    doubles: 0,
+    ab: 22,
+    h: 16,
+    doubles: 1,
     triples: 1,
     hr: 0
   },
@@ -203,8 +203,8 @@ const players = [
   },
    {
     name: "Sabrina",
-    ab: 34,
-    h: 19,
+    ab: 41,
+    h: 21,
     doubles: 0,
     triples: 0,
     hr: 0

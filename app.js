@@ -9,11 +9,11 @@ const players = [
   },
   {
     name: "Austin Smith",
-    ab: 203,
-    h: 153,
-    doubles: 35,
-    triples: 5,
-    hr: 30
+    ab: 225,
+    h: 168,
+    doubles: 38,
+    triples: 6,
+    hr: 32
   },
   {
     name: "Lucas F",
@@ -46,7 +46,7 @@ const players = [
     h: 22,
     doubles: 5,
     triples: 0,
-    hr: 1
+    hr: 2
   },
    {
     name: "Ben P",
@@ -67,25 +67,25 @@ const players = [
  
    {
     name: "Joey",
-    ab: 20,
-    h: 10,
+    ab: 24,
+    h: 11,
     doubles: 3,
     triples: 1,
     hr: 1
   },
    {
     name: "Mitch",
-    ab: 39,
-    h: 27,
+    ab: 43,
+    h: 30,
     doubles: 1,
     triples: 0,
     hr: 0
   },
    {
     name: "Cole Inderle",
-    ab: 42,
-    h: 25,
-    doubles: 8,
+    ab: 58,
+    h: 31,
+    doubles: 11,
     triples: 0,
     hr: 1
   },
@@ -107,8 +107,8 @@ const players = [
   },
    {
     name: "Dad Bod",
-    ab: 40,
-    h: 21,
+    ab: 52,
+    h: 27,
     doubles: 2,
     triples: 0,
     hr: 1
@@ -123,24 +123,24 @@ const players = [
   },
    {
     name: "Tim",
-    ab: 26,
-    h: 14,
-    doubles: 0,
+    ab: 30,
+    h: 16,
+    doubles: 1,
     triples: 0,
     hr: 0
   },
    {
     name: "Jordan",
-    ab: 40,
-    h: 23,
+    ab: 52,
+    h: 26,
     doubles: 2,
     triples: 0,
     hr: 0
   },
    {
     name: "Jay Bob",
-    ab: 43,
-    h: 22,
+    ab: 55,
+    h: 28,
     doubles: 1,
     triples: 0,
     hr: 0
@@ -203,27 +203,27 @@ const players = [
   },
    {
     name: "Sabrina",
-    ab: 41,
-    h: 21,
+    ab: 45,
+    h: 23,
     doubles: 0,
     triples: 0,
     hr: 0
   },
   {
     name: "Dom",
-    ab: 69,
-    h: 46,
-    doubles: 8,
+    ab: 83,
+    h: 55,
+    doubles: 10,
     triples: 5,
-    hr: 8
+    hr: 13
   },
    {
     name: "Nick Doetkott",
-    ab: 13,
-    h: 9,
-    doubles: 2,
-    triples: 0,
-    hr: 0
+    ab: 25,
+    h: 16,
+    doubles: 3,
+    triples: 1,
+    hr: 2
   },
   
 ];

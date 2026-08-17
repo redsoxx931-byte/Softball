@@ -3,30 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Softball Batting Stats</title>
+  <title>Slowpitch Softball Stats</title>
+  <meta name="description" content="Batting stats for Busch League, Jager Bombs, and Peace." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <div class="container">
-    <h1>Slowpitch Softball Stats</h1>
+    <header class="page-header">
+      <p class="eyebrow">Slowpitch Softball</p>
+      <h1>Batting Stats</h1>
+      <p class="subtitle">Season stats for Busch League, Jager Bombs &amp; Peace</p>
+    </header>
 
-    <table id="statsTable">
-      <thead>
-  <tr>
-    <th data-stat="name">Player</th>
-    <th data-stat="ab">AB</th>
-    <th data-stat="h">H</th>
-    <th data-stat="doubles">2B</th>
-    <th data-stat="triples">3B</th>
-    <th data-stat="hr">HR</th>
-    <th data-stat="avg">AVG</th>
-    <th data-stat="slg">SLG</th>
-    <th data-stat="ops">OPS</th>
-  </tr>
-</thead>
-      <tbody></tbody>
-    </table>
+    <div class="controls">
+      <div class="team-filter" id="teamFilter" role="group" aria-label="Filter by team">
+        <button type="button" data-team="all" class="active">All Teams</button>
+        <button type="button" data-team="Busch League">Busch League</button>
+        <button type="button" data-team="Jager Bombs">Jager Bombs</button>
+        <button type="button" data-team="Peace">Peace</button>
+      </div>
+      <p id="playerCount" class="player-count"></p>
+    </div>
+
+    <div class="table-wrap">
+      <table id="statsTable">
+        <thead>
+          <tr>
+            <th class="rank-col">#</th>
+            <th data-stat="name">Player</th>
+            <th data-stat="ab">AB</th>
+            <th data-stat="h">H</th>
+            <th data-stat="doubles">2B</th>
+            <th data-stat="triples">3B</th>
+            <th data-stat="hr">HR</th>
+            <th data-stat="avg">AVG</th>
+            <th data-stat="slg">SLG</th>
+            <th data-stat="ops">OPS</th>
+            <th data-stat="abPerHr">AB/HR</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <p class="footnote">Tap a column header to sort. AB/HR shows &mdash; for players with no home runs.</p>
   </div>
 
   <script src="app.js"></script>

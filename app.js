@@ -1,12 +1,12 @@
 const players = [
   { name: "Kevin Sandborg", ab: 43, h: 24, doubles: 4, triples: 1, hr: 5, teams: ["Jager Bombs"] },
-  { name: "Austin Smith", ab: 240, h: 178, doubles: 40, triples: 6, hr: 35, teams: ["Busch League", "Jager Bombs", "Peace"] },
-  { name: "Lucas F", ab: 32, h: 23, doubles: 2, triples: 0, hr: 7, teams: ["Peace"] },
-  { name: "Jeff L", ab: 52, h: 31, doubles: 1, triples: 2, hr: 0, teams: ["Peace"] },
-  { name: "Jordan P", ab: 56, h: 33, doubles: 4, triples: 0, hr: 2, teams: ["Peace"] },
-  { name: "Dave B", ab: 43, h: 26, doubles: 6, triples: 0, hr: 2, teams: ["Peace"] },
-  { name: "Ben P", ab: 49, h: 24, doubles: 4, triples: 2, hr: 0, teams: ["Peace"] },
-  { name: "Jon S", ab: 45, h: 21, doubles: 2, triples: 0, hr: 0, teams: ["Peace"] },
+  { name: "Austin Smith", ab: 243, h: 178, doubles: 40, triples: 6, hr: 35, teams: ["Busch League", "Jager Bombs", "Peace"] },
+  { name: "Lucas F", ab: 36, h: 25, doubles: 2, triples: 0, hr: 8, teams: ["Peace"] },
+  { name: "Jeff L", ab: 56, h: 33, doubles: 1, triples: 2, hr: 0, teams: ["Peace"] },
+  { name: "Jordan P", ab: 60, h: 36, doubles: 4, triples: 0, hr: 2, teams: ["Peace"] },
+  { name: "Dave B", ab: 47, h: 26, doubles: 6, triples: 0, hr: 2, teams: ["Peace"] },
+  { name: "Ben P", ab: 52, h: 26, doubles: 4, triples: 2, hr: 0, teams: ["Peace"] },
+  { name: "Jon S", ab: 48, h: 23, doubles: 4, triples: 0, hr: 0, teams: ["Peace"] },
   { name: "Joey", ab: 32, h: 13, doubles: 3, triples: 1, hr: 1, teams: ["Busch League"] },
   { name: "Mitch", ab: 50, h: 36, doubles: 1, triples: 0, hr: 0, teams: ["Busch League"] },
   { name: "Cole Inderle", ab: 65, h: 34, doubles: 12, triples: 0, hr: 1, teams: ["Busch League"] },
@@ -25,7 +25,7 @@ const players = [
   { name: "Jonathon", ab: 30, h: 22, doubles: 2, triples: 1, hr: 1, teams: ["Jager Bombs"] },
   { name: "Jeff H", ab: 22, h: 12, doubles: 3, triples: 0, hr: 2, teams: ["Peace"] },
   { name: "Sabrina", ab: 45, h: 23, doubles: 0, triples: 0, hr: 0, teams: ["Jager Bombs"] },
-  { name: "Dom", ab: 87, h: 59, doubles: 10, triples: 5, hr: 14, teams: ["Busch League", "Jager Bombs", "Peace"] },
+  { name: "Dom", ab: 90, h: 61, doubles: 10, triples: 5, hr: 15, teams: ["Busch League", "Jager Bombs", "Peace"] },
   { name: "Nick Doetkott", ab: 33, h: 22, doubles: 3, triples: 1, hr: 3, teams: ["Busch League"] },
 ];
 

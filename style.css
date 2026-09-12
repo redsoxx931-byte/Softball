@@ -10,9 +10,10 @@
   --accent-ink: #F3ECDC;
   --gold: #E3A72E;        /* infield / scoreboard marigold */
   --rust: #B5452B;        /* highlight red */
-  --busch: #A6412D;
-  --jager: #C4881C;
-  --peace: #2F6B4F;
+  --busch: #2F8FC4;
+  --jager: #7A4FA3;
+  --peace: #1B3A6B;
+  --cream-team: #6FC7A0;
   --radius: 8px;
   --font-display: "Anton", "Arial Narrow", sans-serif;
   --font-body: "Libre Franklin", "Segoe UI", sans-serif;
@@ -259,8 +260,9 @@ tr.clickable:hover { background: #EADFC0; }
   white-space: nowrap;
 }
 .team-busch-league { background: var(--busch); }
-.team-jager-bombs { background: var(--jager); color: #2A2410; }
+.team-jager-bombs { background: var(--jager); }
 .team-peace { background: var(--peace); }
+.team-cream-team { background: var(--cream-team); color: #0F3B2A; }
 
 .foot-note { text-align: center; color: var(--muted); font-size: 12px; margin-top: 16px; }
 

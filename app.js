@@ -6,6 +6,7 @@
 const SEASONS = [
   {
     id: "2026",
+    year: "2026",
     label: "2026 Summer",
     players: [
       { name: "Kevin Sandborg", ab: 54, h: 32, doubles: 4, triples: 1, hr: 6, teams: ["Jager Bombs"] },
@@ -38,6 +39,24 @@ const SEASONS = [
       { name: "Nick Doetkott", ab: 50, h: 34, doubles: 7, triples: 3, hr: 3, teams: ["Busch League"] },
     ],
   },
+  {
+    id: "2026-fall",
+    year: "2026",
+    label: "2026 Fall",
+    players: [
+      { name: "Jol", ab: 9, h: 7, doubles: 0, triples: 1, hr: 1, teams: ["Cream Team"] },
+      { name: "Austin Smith", ab: 9, h: 6, doubles: 2, triples: 0, hr: 2, teams: ["Cream Team"] },
+      { name: "Linter", ab: 8, h: 5, doubles: 0, triples: 0, hr: 1, teams: ["Cream Team"] },
+      { name: "Dom", ab: 8, h: 6, doubles: 0, triples: 1, hr: 1, teams: ["Cream Team"] },
+      { name: "Austin Olter", ab: 8, h: 6, doubles: 1, triples: 2, hr: 1, teams: ["Cream Team"] },
+      { name: "Lance", ab: 8, h: 6, doubles: 1, triples: 0, hr: 0, teams: ["Cream Team"] },
+      { name: "Cole Inderle", ab: 7, h: 4, doubles: 0, triples: 0, hr: 0, teams: ["Cream Team"] },
+      { name: "Nate", ab: 7, h: 6, doubles: 1, triples: 0, hr: 0, teams: ["Cream Team"] },
+      { name: "Jonathon", ab: 7, h: 5, doubles: 1, triples: 0, hr: 0, teams: ["Cream Team"] },
+      { name: "Kaz", ab: 7, h: 6, doubles: 0, triples: 0, hr: 0, teams: ["Cream Team"] },
+      { name: "Lorenzo", ab: 7, h: 4, doubles: 0, triples: 0, hr: 0, teams: ["Cream Team"] },
+    ],
+  },
 ];
 
 const QUAL_AB = 20; // minimum at-bats to qualify for rate-stat leaderboards/highlights
@@ -65,6 +84,18 @@ function teamBadgesHTML(teams) {
 
 function getSeason(id) {
   return SEASONS.find(s => s.id === id);
+}
+
+function seasonTeams(season) {
+  const teams = [];
+  season.players.forEach(p => p.teams.forEach(t => { if (!teams.includes(t)) teams.push(t); }));
+  return teams;
+}
+
+function joinWithAmp(list) {
+  if (list.length === 0) return "";
+  if (list.length === 1) return list[0];
+  return `${list.slice(0, -1).join(", ")} &amp; ${list[list.length - 1]}`;
 }
 
 /* ===========================================================
@@ -107,20 +138,26 @@ window.addEventListener("hashchange", render);
    View: season picker
    =========================================================== */
 function pickerTemplate() {
-  const cards = SEASONS.slice().reverse().map(s => `
+  const cards = SEASONS.slice().reverse().map(s => {
+    const teamCount = seasonTeams(s).length;
+    return `
     <a class="season-card" href="#/season/${encodeURIComponent(s.id)}">
-      <span class="season-year">${s.id}</span>
+      <span class="season-year">${s.year}</span>
       <span class="season-name">${s.label}</span>
-      <span class="season-meta">${s.players.length} players &middot; 3 teams</span>
+      <span class="season-meta">${s.players.length} players &middot; ${teamCount} team${teamCount === 1 ? "" : "s"}</span>
     </a>
-  `).join("");
+  `;
+  }).join("");
+
+  const allTeams = [];
+  SEASONS.forEach(s => seasonTeams(s).forEach(t => { if (!allTeams.includes(t)) allTeams.push(t); }));
 
   return `
     <div class="picker-wrap">
       <header class="page-header">
         <p class="eyebrow">Slowpitch Softball</p>
         <h1>Select a Season</h1>
-        <p class="subtitle">Busch League, Jager Bombs &amp; Peace</p>
+        <p class="subtitle">${joinWithAmp(allTeams)}</p>
       </header>
       <div class="season-cards">${cards}</div>
     </div>
@@ -131,12 +168,15 @@ function pickerTemplate() {
    View: season stats (leaderboards + full table)
    =========================================================== */
 function seasonTemplate(season) {
+  const teams = seasonTeams(season);
+  const teamButtons = teams.map(t => `<button type="button" data-team="${t}">${t}</button>`).join("");
+
   return `
     <a class="back-link" href="#/">&larr; All Seasons</a>
     <header class="page-header">
       <p class="eyebrow">Slowpitch Softball</p>
       <h1>${season.label}</h1>
-      <p class="subtitle">Busch League, Jager Bombs &amp; Peace</p>
+      <p class="subtitle">${joinWithAmp(teams)}</p>
     </header>
 
     <section class="board-row" id="boardRow"></section>
@@ -144,9 +184,7 @@ function seasonTemplate(season) {
     <div class="controls">
       <div class="team-filter" id="teamFilter">
         <button type="button" data-team="all" class="active">All Teams</button>
-        <button type="button" data-team="Busch League">Busch League</button>
-        <button type="button" data-team="Jager Bombs">Jager Bombs</button>
-        <button type="button" data-team="Peace">Peace</button>
+        ${teamButtons}
       </div>
       <p class="player-count" id="playerCount"></p>
     </div>
@@ -342,7 +380,7 @@ function playerTemplate(fromSeasonId, playerName) {
     const flags = leaderFlags(season, player);
     return `
       <tr>
-        <td class="year-cell">${season.id}</td>
+        <td class="year-cell">${season.label}</td>
         <td class="name-cell"><div class="team-badges">${teamBadgesHTML(player.teams)}</div></td>
         ${cell("ab", player.ab, {})}
         ${cell("h", player.h, flags)}
@@ -398,7 +436,7 @@ function playerTemplate(fromSeasonId, playerName) {
       <table class="profile-table">
         <thead>
           <tr>
-            <th>Year</th><th>Team</th><th>AB</th><th>H</th><th>2B</th><th>3B</th><th>HR</th><th>AVG</th><th>SLG</th><th>OPS</th><th>AB/HR</th>
+            <th>Season</th><th>Team</th><th>AB</th><th>H</th><th>2B</th><th>3B</th><th>HR</th><th>AVG</th><th>SLG</th><th>OPS</th><th>AB/HR</th>
           </tr>
         </thead>
         <tbody>${rows}${totalRow}</tbody>

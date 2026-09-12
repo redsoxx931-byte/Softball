@@ -6,7 +6,7 @@
 const SEASONS = [
   {
     id: "2026",
-    label: "2026 Season",
+    label: "2026 Summer",
     players: [
       { name: "Kevin Sandborg", ab: 54, h: 32, doubles: 4, triples: 1, hr: 6, teams: ["Jager Bombs"] },
       { name: "Austin Smith", ab: 279, h: 202, doubles: 44, triples: 8, hr: 41, teams: ["Busch League", "Jager Bombs", "Peace"] },
@@ -172,7 +172,7 @@ function seasonTemplate(season) {
       </table>
     </div>
 
-    <p class="foot-note">Tap a column header to sort &middot; tap a player for their career page &middot; leaderboards require ${QUAL_AB}+ at-bats</p>
+    <p class="foot-note">Tap a column header to sort &middot; tap a player for their career page</p>
   `;
 }
 
@@ -189,21 +189,21 @@ function wireSeasonView(season) {
   }
 
   function renderBoards() {
-    const qualified = season.players.filter(p => p.ab >= QUAL_AB).map(p => ({ ...p, s: calcStats(p) }));
+    const all = season.players.map(p => ({ ...p, s: calcStats(p) }));
     const boards = [
       { title: "Batting Average", cls: "", key: p => p.s.avg, fmt: v => v.toFixed(3) },
       { title: "Home Runs", cls: "hr", key: p => p.hr, fmt: v => v },
       { title: "OPS", cls: "", key: p => p.s.ops, fmt: v => v.toFixed(3) },
     ];
     document.getElementById("boardRow").innerHTML = boards.map(b => {
-      const top5 = [...qualified].sort((a, z) => b.key(z) - b.key(a)).slice(0, 5);
+      const top5 = [...all].sort((a, z) => b.key(z) - b.key(a)).slice(0, 5);
       const items = top5.map((p, i) => `
         <li>
           <span class="rank">${i + 1}</span>
           ${playerLink(p.name, `<span class="pname">${p.name}</span>`)}
           <span class="pval">${b.fmt(b.key(p))}</span>
         </li>`).join("");
-      return `<div class="board ${b.cls}"><h3>${b.title} <span class="qual">min ${QUAL_AB} AB</span></h3><ol>${items}</ol></div>`;
+      return `<div class="board ${b.cls}"><h3>${b.title}</h3><ol>${items}</ol></div>`;
     }).join("");
   }
 

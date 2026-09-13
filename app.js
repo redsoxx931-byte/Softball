@@ -45,7 +45,7 @@ const SEASONS = [
     label: "2026 Fall",
     players: [
       { name: "Jol", ab: 9, h: 7, doubles: 0, triples: 1, hr: 1, teams: ["Cream Team"] },
-      { name: "Austin Smith", ab: 16, h: 11, doubles: 2, triples: 1, hr: 5, teams: ["Cream Team", "Jager Bombs"] },
+      { name: "Austin Smith", ab: 32, h: 21, doubles: 3, triples: 1, hr: 8, teams: ["Cream Team", "Jager Bombs"] },
       { name: "Linter", ab: 8, h: 5, doubles: 0, triples: 0, hr: 1, teams: ["Cream Team"] },
       { name: "Dom", ab: 8, h: 6, doubles: 0, triples: 1, hr: 1, teams: ["Cream Team"] },
       { name: "Austin Olter", ab: 8, h: 6, doubles: 1, triples: 2, hr: 1, teams: ["Cream Team"] },
@@ -61,7 +61,7 @@ const SEASONS = [
       { name: "Megan", ab: 5, h: 2, doubles: 0, triples: 0, hr: 0, teams: ["Jager Bombs"] },
       { name: "Cody", ab: 5, h: 2, doubles: 0, triples: 0, hr: 0, teams: ["Jager Bombs"] },
       { name: "Autumn", ab: 5, h: 1, doubles: 0, triples: 0, hr: 0, teams: ["Jager Bombs"] },
-      { name: "Zach", ab: 5, h: 4, doubles: 1, triples: 0, hr: 1, teams: ["Jager Bombs"] },
+      { name: "Zack", ab: 18, h: 11, doubles: 2, triples: 0, hr: 1, teams: ["Jager Bombs"] },
     ],
   },
 ];
